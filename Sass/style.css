@@ -1,0 +1,183 @@
+*, ::after, ::before
+{    
+    margin: 0;
+    padding: 0;
+    font-family: 'Times New Roman', Times, serif;
+    box-sizing: border-box;
+}
+
+body
+{
+    height: 100%;
+    background-color: rgb(123, 169, 209);
+}
+
+dl, ol, ul
+{
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+header
+{
+    background-color: bisque;    
+}
+
+header nav ul
+{
+    list-style-type: none;
+    display: flex;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 40px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    justify-content: space-evenly;
+    flex-direction: row;
+    align-items: center;
+    font-weight: bold;        
+}
+
+li
+{
+    background-color: blanchedalmond;
+    border-color: brown;
+    border: 2px;
+}
+
+.top-bar
+{
+    position: fixed;    
+    width: 100%;
+}
+
+div
+{
+    width: 100%;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+
+.large-center-container
+{
+    box-shadow: rgb(0, 0, 0) 0px 5px 15px;
+    display: grid!important;
+    justify-content: center!important;        
+}
+
+.welcome-text
+{
+    padding-top: 5%;    
+    text-align: center;    
+}
+
+.ad-text
+{
+    font-size: 30px;
+    text-align: center;    
+}
+
+.main-features
+{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    height: 100%;
+    background-color: white;
+    margin: 15px;    
+}
+
+section
+{
+    border: 1px solid rgb(255, 74, 74);
+    box-shadow: grey 0px 10px 15px;
+    justify-content: center;
+    display: flex;
+    text-align: center;    
+    padding: 1%;
+}
+
+section h1
+{
+    font-weight: bold;
+    font-size: 30px;
+}
+
+section p
+{
+    font-weight: lighter;
+    font-size: medium;
+    margin-top: 30px;
+    text-align: left;    
+}
+
+footer
+{
+    text-align: center;
+}
+
+#drum1
+{
+    background-image: none;
+}
+#drum2
+{
+    background-image: none;
+}
+#drum3
+{
+    background-image: none;
+}
+#drum4
+{
+    background-image: none;
+}
+#drum5
+{
+    background-image: none;
+}
+#drum6
+{
+    background-image: none;
+}
+
+@media only screen and (min-width: 320px)
+{
+    .large-center-container
+    {
+        height: 1200px;
+        grid-template-rows: 150px 50px 980px;
+    }
+    section
+    {              
+        flex-direction: column;
+        flex: 100%;
+    }
+}
+
+@media only screen and (min-width: 600px)
+{
+    .large-center-container
+    {        
+        height: 550px;
+        grid-template-rows: 150px 50px 150px;
+    }
+    section
+    {        
+        flex: 50%;
+    }
+}
+
+@media only screen and (min-width: 1000px)
+{
+    section
+    {        
+        flex: 33%
+    }
+}
+

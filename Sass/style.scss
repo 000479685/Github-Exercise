@@ -1,0 +1,14 @@
+
+
+@media screen and (min-width:320px)
+{
+    @import 'screens/phone';    
+}
+
+@media screen and (min-width: 600px) {
+    @import 'screens/tablet';
+}
+
+@media screen and (min-width: 1000px) {
+    @import 'screens/desktop';
+}

@@ -1,0 +1,10 @@
+.large-center-container
+{
+    height: 1200px;
+    grid-template-rows: 150px 50px 980px;
+}
+section
+{              
+    flex-direction: column;
+    flex: 100%;
+}
